@@ -1,0 +1,77 @@
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatApp</title>
+    <link rel="stylesheet" href="niru.scss">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+    
+      <main>
+        <header>
+            <div class="title">
+              <img src="icons/chats.png" alt="chatApp" width="35px">
+              <h1>chatApp</h1>
+            </div>
+            <button class="button" onclick="show_hide()">
+                <img src="icons/menu.png" alt="menu bar" width="37px">
+            </button>
+        </header>
+        <div class="container">
+          <div class="users-window">
+            <div class="users-head">
+              <h3>people</h3>
+              <h4>3</h4>
+            </div>
+            <div class="users-list">
+              <p>niranjan</p>
+              <p>ranjan</p>
+              <p>niru</p>
+            </div>
+          </div>
+          <div class="chat-window">
+            <div class="chat">
+              <div class="chats">
+                <div class="user-join">
+                  <p><b>niranjan</b> joined the chat</p>
+                </div>
+                <div class="message incoming">
+                <h5>niru</h5>
+                <p>hello ultron</p>
+                </div>
+                <div class="message outgoing">
+                  <h5>niranjan</h5>
+                  <p>welcome niru</p>
+                </div>
+              </div>
+            </div>
+            <div class="user-input">
+              <input type="text" placeholder="type your message.....">
+              <button class="send">SEND</button>
+            </div>
+          </div>
+        </div>
+      </main>
+<script>
+  var uwindow=documnet.querySelector('.users-window')
+function show_hide(){
+  if(uwindow.style.display=="block"){
+    uwindow.style.display="none";
+  }
+  else{
+    uwindow.style.display="block";
+  }
+}
+
+</script>
+
+
+</body>
+
+</html>
